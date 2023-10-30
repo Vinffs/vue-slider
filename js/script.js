@@ -42,5 +42,8 @@ createApp({
       this.index--;
       this.index < 0 ? (this.index = this.slides.length - 1) : null;
     },
+    isActive(activeThumb) {
+      return activeThumb === this.index ? "active" : null;
+    },
   },
 }).mount("#app");
