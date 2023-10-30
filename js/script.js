@@ -45,5 +45,8 @@ createApp({
     isActive(activeThumb) {
       return activeThumb === this.index ? "active" : null;
     },
+    onClick(index) {
+      this.index = index;
+    },
   },
 }).mount("#app");
