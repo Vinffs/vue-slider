@@ -49,4 +49,9 @@ createApp({
       this.index = index;
     },
   },
+  created() {
+    setInterval(() => {
+      this.nextSlide();
+    }, 3000);
+  },
 }).mount("#app");
